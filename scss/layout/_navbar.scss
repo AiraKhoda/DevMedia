@@ -1,0 +1,42 @@
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                min-height: 100px;
+                &__menu {
+                    list-style-type: none;
+                    display: flex;
+                    li {
+                        padding-left: 2.5rem;
+                        cursor: pointer;
+                    }
+                }
+                &__logo {
+                    display: flex;
+                    span {
+                        color: $dark-color;
+                        padding-left: 0.75rem;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                    img {
+                        margin-bottom: 0.7rem;
+                        width: 40px;
+                        height: 40px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            @media (max-width:768px) {
+                .navbar {
+                    flex-direction: column;
+                    &__menu {
+                        padding: 0.85rem 0.25rem;
+                        flex-direction: column;
+                        li {
+                            padding-top: 0.45rem;
+                        }
+                    }
+                }
+            }
