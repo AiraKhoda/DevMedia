@@ -1,0 +1,21 @@
+.btn {
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.btn-dark {
+    background-color: $dark-color;
+    color: $light-color;
+}
+
+.btn-light {
+    background-color: $white-color;
+    color: $dark-color;
+}

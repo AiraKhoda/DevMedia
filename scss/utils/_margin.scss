@@ -1,0 +1,21 @@
+$spaces:(1, 2, 3, 4, 5, 6);
+@each $space in $spaces {
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin:0 #{$space}rem;
+    }
+    .mt-#{$space} {
+        margin-top: #{$space}rem;
+    }
+    .mb-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+    .ml-#{$space} {
+        margin-left: #{$space}rem;
+    }
+    .mr-#{$space} {
+        margin-right: #{$space}rem;
+    }
+}
