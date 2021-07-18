@@ -1,5 +1,7 @@
     .hero {
         min-height: 65vh;
+        display: flex;
+        flex-direction: column;
         &__content {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -8,6 +10,22 @@
             .text-overlay {
                 font-size: 6.25rem;
                 color: $grey-color;
+                letter-spacing: 4px;
+                display: block;
+            }
+        }
+        &__action {
+            i {
+                padding-right: 1rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__icon {
+            margin: 3rem auto;
+            i {
+                font-size: 3rem;
+                color: $silver-color;
             }
         }
         &__log {
@@ -15,7 +33,29 @@
                 display: block;
             }
         }
-        &__ {
+        &__img {
             justify-self: end;
+            img {
+                border-radius: 5px;
+                margin-right: 3rem;
+            }
+            img:nth-child(2) {
+                margin-bottom: 2.25rem;
+            }
+            img:nth-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    @media (max-width:1020px) {
+        .hero {
+            &__content {
+                grid-template-columns: 1fr;
+            }
+            &__img {
+                justify-self: center;
+                margin-top: 3.25rem;
+            }
         }
     }
