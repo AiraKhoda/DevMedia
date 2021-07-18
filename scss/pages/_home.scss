@@ -1,0 +1,21 @@
+    .hero {
+        min-height: 65vh;
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__info {
+            .text-overlay {
+                font-size: 6.25rem;
+                color: $grey-color;
+            }
+        }
+        &__log {
+            span {
+                display: block;
+            }
+        }
+        &__ {
+            justify-self: end;
+        }
+    }
