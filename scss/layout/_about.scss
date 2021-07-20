@@ -1,0 +1,22 @@
+.about {
+    position: relative;
+    &__icon {
+        position: absolute;
+        font-size: 13rem;
+        color: $grey-color;
+        left: 0;
+        bottom: 2.25rem;
+        z-index: -1;
+    }
+    &__content {
+        p {
+            color: $wizard-grey;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        font-size: 3rem;
+        color: $wizard-grey;
+        left: 0;
+    }
+}
