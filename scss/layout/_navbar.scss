@@ -8,6 +8,13 @@
                     li {
                         padding-left: 2.5rem;
                         cursor: pointer;
+                        color: $grey-color;
+                    }
+                    .active {
+                        color: $dark-color;
+                    }
+                    li:hover {
+                        color: $dark-color;
                     }
                 }
                 &__logo {
@@ -32,11 +39,14 @@
                 .navbar {
                     flex-direction: column;
                     &__menu {
-                        padding: 0.85rem 0.25rem;
+                        padding: 0.85rem 0.5rem;
                         flex-direction: column;
                         li {
                             padding-top: 0.45rem;
                         }
+                    }
+                    &__logo {
+                        padding-right: 0.5rem;
                     }
                 }
             }
